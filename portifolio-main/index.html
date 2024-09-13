@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pedro Gustavo</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/kube.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/custom.min.css" />
+    <link rel="shortcut icon" href="img/y-solid.svg" />
+	<link href='https://fonts.googleapis.com/css?family=Playfair+Display+SC:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+	<style>
+		.intro h1:before {
+			content: 'PEDRO';
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation -->
+	<div class="main-nav">
+		<div class="container">
+			<header class="group top-nav">
+				<div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+				    <span class="logo">Pedro</span>
+				</div>
+			    <nav id="navbar-1" class="navbar item-nav">
+				    <ul>
+				        <li class="active"><a href="#about">Sobre</a></li>
+				        <li><a href="#experiences">Experiências</a></li>
+				        <li><a href="#achievements">Formação</a></li>
+				        <li><a href="#skills">Habilidades Técnicas</a></li>
+				    </ul>
+				</nav>
+			</header>
+		</div>
+	</div>
+
+	<!-- Introduction -->
+	<div class="intro section" id="about">
+		<div class="container">
+			<p>Olá, eu sou o Pedro Gustavo</p>
+			<div class="units-row units-split wrap">
+				<div class="unit-20">
+					<img src="img/ava.jpg" alt="Avatar">
+				</div>
+				<div class="unit-80">
+					<h1>Eu moro<br><span id="typed"></span></h1>
+				</div>
+				<p>
+					Pedro, Desenvolvedor de Software e Tecnologia.
+					<p>Pedro é um talentoso desenvolvedor de software com habilidades sólidas em diversas tecnologias. Sua paixão pela programação o impulsionou a explorar e dominar linguagens como Java. Além disso, ele possui experiência em frameworks populares como Bootstrap e Spring, demonstrando sua versatilidade no desenvolvimento front-end e back-end.
+					</p>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Work Experience -->
+
+
+	<!-- Award & Achievements -->
+	<div class="award section second" id="achievements">
+		<div class="container">
+			<h1>Formação</h1>
+			<ul class="award-list list-flat">
+				<li>2023 - 2026 | UCB/DF - TAGUATINGA</li>
+				<li><small>Bacharelado em Engenharia de Software - (cursando).</small></li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Technical Skills -->
+	<div class="skills section second" id="skills">
+		<div class="container">
+			<h1>Habilidades<br>Técnicas</h1>
+			<ul class="skill-list list-flat">
+				<li>Front-end</li>
+				<li>HTML / CSS / Javascript</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Back-end</li>
+				<li>Java / API Rest</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Database</li>
+				<li>MySQL</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Framework</li>
+				<li>Spring Boot / Lombok / Bootstrap</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Ferramentas</li>
+				<li>Git</li>
+			</ul>
+			<ul class="skill-list list-flat">
+				<li>Outros</li>
+				<li>Scrum / Jira / Kanban</li>
+			</ul>
+		</div>
+	</div>
+	<div class="work section second" id="experiences">
+		<div class="container">
+			<h1>Experiências</h1>
+			<ul class="work-list"></ul>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="units-row">
+			    <div class="unit-50">
+					<ul class="social list-flat right">
+						<li><a href="mailto:pedridevgh@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/pedro-gustavo19/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+						<li><a href="https://www.instagram.com/pedrincxt/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+					</ul>
+			    </div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Javascript -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/typed.min.js"></script>
+    <script src="js/kube.min.js"></script>
+    <script src="js/site.js"></script>
+    <script>
+		function newTyped(){}$(function(){$("#typed").typed({
+		// Change to edit type effect
+		strings: ["Em Brasília", "No DF", "Em Qualquer lugar"],
+
+		typeSpeed:90,backDelay:700,contentType:"html",loop:!0,resetCallback:function(){newTyped()}}),$(".reset").click(function(){$("#typed").typed("reset")})});
+    </script>
+</body>
+</html>
